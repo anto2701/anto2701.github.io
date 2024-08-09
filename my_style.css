@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(216, 140, 153) ;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#about, #experience, #contact {
+    background-color:  #bcf0bcf1;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.navop {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navpag {
+    color: rgb(231, 153, 179);
+    background-color: #bcf0bcf1;
+    border: solid;
+    border-color:  rgb(231, 153, 179);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 3px 2px 3px black;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.bounce {
+    transition: transform 0.2s;
+}
+
+.bounce:hover {
+    transform: scale(1.1);
+}
+
+.paragraph {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}

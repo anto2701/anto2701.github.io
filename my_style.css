@@ -10,12 +10,9 @@ header {
     padding: 20px 0;
     text-align: center;
     border-radius: 15px;
-}
-
-#about, #experience, #contact {
-    background-color:  #bcf0bcf1;
-    padding: 20px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-pic {
@@ -34,6 +31,7 @@ h1 {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    margin: 1rem 0;
 }
 
 .navpag {
@@ -44,6 +42,13 @@ h1 {
     border-radius: 5px;
     padding: 5px;
     box-shadow: 3px 2px 3px black;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.navpag:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -52,6 +57,9 @@ main {
 }
 
 section {
+    background-color: #bcf0bcf1;
+    padding: 20px;
+    border-radius: 15px;
     margin-bottom: 20px;
 }
 
@@ -66,9 +74,9 @@ h2 {
     margin-top: 20px;
 }
 
-.contact-icon {
+.contact-links img {
     width: 70px;
-    height: 70px;
+    height: autp;
     border-radius: 50%;
 }
 
@@ -80,7 +88,35 @@ h2 {
     transform: scale(1.1);
 }
 
-.paragraph {
-    font-family: 'Arial', sans-serif;
+/*diseño responsivo*/
+
+@media (max-width: 767px) {
+    .profile-pic {
+        width: 100px;
+        height: auto;
+    }
+    .navop {
+        display: block;
+        text-align: center;
+    }
+    .navpag {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .contact-links {
+        display: block;
+        text-align: center;
+    }
+    .contact-links img {
+        margin: 0.5rem;
+    }
+}
+
+h1, h3 {
+    margin: 0.5rem 0;
+}
+
+p {
+    margin: 1rem 0;
     line-height: 1.6;
 }
